@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Vis Lab 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+        <!-- Milligram CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Coffee House Chains</h1>
+            <p>A ranking of selected leading coffee house chains worldwide</p>
+            <div class="menu row">
+                <div class="column">
+                    <label for="group-by">Group By</label>
+                    <select id="group-by">
+                        <option value="stores">Stores worldwide</option>
+                        <option value="revenue">Revenue in billion U.S. dollars</option>
+                    </select>    
+                </div>
+                <div class="column cort-c">
+                    <br>
+                    <button id="sort">Sort</button>  
+                </div>          
+            </div>
+            <div class="bar-chart"></div>
+        </div>
+    </body>
